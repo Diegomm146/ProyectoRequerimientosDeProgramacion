@@ -9,12 +9,12 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/loginAsociacion" element={<Login />} />
-        <Route path="/loginEstudiante" element={<Login />} />
-        <Route path="/loginColaborador" element={<Login />} />
-        <Route path="/registroAsicacion" element={<Registro />} />
-        <Route path="/registroEstudiante" element={<Registro />} />
-        <Route path="/registroColaborador" element={<Registro />} />
+        <Route path="/loginAsociacion" element={<Login tipoUsuario="Asociacion"/>} />
+        <Route path="/loginEstudiante" element={<Login tipoUsuario="Estudiante"/>} />
+        <Route path="/loginColaborador" element={<Login tipoUsuario="Colaborador"/>} />
+        <Route path="/registroAsociacion" element={<Registro tipoUsuario="Asociacion" tipoNumero="Telefonico" />} />
+        <Route path="/registroEstudiante" element={<Registro tipoUsuario="Estudiante" tipoNumero="Carnet"/>} />
+        <Route path="/registroColaborador" element={<Registro tipoUsuario="Colaborador" tipoNumero="Carnet"/>} />
       </Routes>
     </Router>
   );

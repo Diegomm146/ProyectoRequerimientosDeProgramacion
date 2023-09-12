@@ -1,5 +1,5 @@
 
-button {
+.botonAcceso {
   background-color: #25D39F; /* Cambia el color de fondo del botón según tus preferencias */
   color: #333333; /* Cambia el color del texto del botón según tus preferencias */
   font-family: "Open Sans-Regular", Helvetica;
@@ -11,15 +11,15 @@ button {
   right: 650px;
 }
 
-.botonAcceso1{
+#botonAcceso1 {
   bottom: 200px;
 }
 
-.botonAcceso2{
+#botonAcceso2 {
   bottom: 150px;
 }
 
-.botonAcceso3{
+#botonAcceso3 {
   bottom: 100px;
 }
   
