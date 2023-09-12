@@ -52,3 +52,17 @@ h1{
   border: none;
   border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
 }
+
+.BackgroundMenu{
+
+  background-image: repeating-linear-gradient(
+    to bottom,    /* Dirección de las rayas (de arriba a abajo) */
+    #87CEEB 0, /* Inicio de la primera franja transparente */
+    #87CEEB 80px, /* Fin de la primera franja transparente y ancho de las rayas */
+    #3498DB 80px, /* Color de las rayas y ancho de las rayas */
+    #3498DB 100px /* Fin de la segunda franja de color */
+  );
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}

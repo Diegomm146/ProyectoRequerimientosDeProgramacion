@@ -1,0 +1,75 @@
+
+.Bienvenido{
+    color: #8E7070
+}
+
+.BotonesAsociacion{
+    background-color: #25D39F; /* Cambia el color de fondo del botón según tus preferencias */
+    color: #333333; /* Cambia el color del texto del botón según tus preferencias */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 30px;
+    padding: 25px 45px; /* Ajusta el relleno del botón según tus preferencias */
+    border: none;
+    border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+    position: relative;
+}
+
+#BotonesAsociacion1{
+    left: 50px;
+}
+
+#BotonesAsociacion2{
+    top: 150px;
+    right: 300px;
+}
+
+#BotonesAsociacion3{
+    top: 300px;
+    right: 575px;
+}
+
+.BotonesEstudiante{
+    background-color: #25D39F; /* Cambia el color de fondo del botón según tus preferencias */
+    color: #333333; /* Cambia el color del texto del botón según tus preferencias */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 30px;
+    padding: 25px 45px; /* Ajusta el relleno del botón según tus preferencias */
+    border: none;
+    border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+    position: relative;
+}
+
+#BotonesEstudiante1{
+    left: 50px;
+}
+
+#BotonesEstudiante2{
+    top: 150px;
+    right: 265px;
+}
+
+.BotonesColaborador{
+    background-color: #25D39F; /* Cambia el color de fondo del botón según tus preferencias */
+    color: #333333; /* Cambia el color del texto del botón según tus preferencias */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 30px;
+    padding: 25px 45px; /* Ajusta el relleno del botón según tus preferencias */
+    border: none;
+    border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+    position: relative;
+}
+
+#BotonesColaborador1{
+    left: 50px;
+}
+
+#BotonesColaborador2{
+    top: 150px;
+    right: 265px;
+}
+
+#regresarMenu{
+    position: relative;
+    left: 1600px;
+    top: 400px;
+}

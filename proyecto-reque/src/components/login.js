@@ -56,7 +56,7 @@ const Registro = ({ tipoUsuario }) => {
                         onChange={handleContrasenaChange}
                         placeholder="Contraseña"
                         />
-                        <Link to={`/login${tipoUsuario}`}>
+                        <Link to={`/menu${tipoUsuario}`}>
                            <button className="accederBoton" type="submit">Acceder</button> 
                         </Link>
                         

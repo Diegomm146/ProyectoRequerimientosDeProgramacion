@@ -2,6 +2,7 @@ import './App.css';
 import Inicio from './components/inicio';
 import Login from './components/login';
 import Registro from './components/registrarse';
+import MenuPrincipal from './components/menuPrincipal';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         <Route path="/registroAsociacion" element={<Registro tipoUsuario="Asociacion" tipoNumero="Telefonico" />} />
         <Route path="/registroEstudiante" element={<Registro tipoUsuario="Estudiante" tipoNumero="Carnet"/>} />
         <Route path="/registroColaborador" element={<Registro tipoUsuario="Colaborador" tipoNumero="Carnet"/>} />
+        <Route path="/menuAsociacion" element={<MenuPrincipal tipoUsuario={"Asociacion"}/>} />
+        <Route path="/menuEstudiante" element={<MenuPrincipal tipoUsuario={"Estudiante"}/>} />
+        <Route path="/menuColaborador" element={<MenuPrincipal tipoUsuario={"Colaborador"}/>} />
       </Routes>
     </Router>
   );

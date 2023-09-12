@@ -82,7 +82,7 @@ const Registro = ({ tipoUsuario, tipoNumero }) => {
                         onChange={handleNumeroChange}
                         placeholder={`Numero ${tipoNumero}`}
                         />
-                        <Link to={`/login${tipoUsuario}`}>
+                        <Link to={`/menu${tipoUsuario}`}>
                            <button className="accederBoton" type="submit">Acceder</button> 
                         </Link>
                         
