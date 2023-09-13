@@ -1,0 +1,117 @@
+.VE-group-9 {
+  width: 100%;
+  height: 64px;
+    position: absolute;
+    left: 1108px;
+   top: 820px;
+   }
+
+
+.VE-rectangle-11 {
+   background: #a3e792;
+    border-radius: 35px;
+    width: 761px;
+    height: 703px;
+    position: absolute;
+    left: 478px;
+   top: 35px;
+   }
+
+.VE-evento-x {
+   color: #000000;
+    text-align: left;
+    background-color: null;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 93px;
+    width: 250px;
+    height: 45px;
+   }
+
+.VE-nombre-del-evento {
+   color: #000000;
+    text-align: left;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 164px;
+    width: 500px;
+    height: 45px;
+   }
+
+.VE-descripcion {
+   color: #000000;
+    text-align: left;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 243px;
+    width: 328px;
+    height: 45px;
+   }
+
+.VE-lugar {
+   color: #000000;
+    text-align: left;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 321px;
+    width: 328px;
+    height: 45px;
+   }
+
+.VE-fecha-y-hora {
+   color: #000000;
+    text-align: left;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 387px;
+    width: 328px;
+    height: 45px;
+   }
+
+.VE-capacidad {
+   color: #000000;
+    text-align: left;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 466px;
+    width: 328px;
+    height: 45px;
+   }
+
+.VE-espacios{
+   color: #000000;
+    text-align: left;
+    font: 400 32px 'Open Sans', sans-serif;
+    position: absolute;
+    left: 134px;
+   top: 542px;
+    width: 328px;
+    height: 45px;
+   }
+
+.VE-inscribirse{
+      background-color: #18D9F3;
+      color: #000000; /* Cambia el color del texto del botón según tus preferencias */
+      font-family: "Open Sans-Regular", Helvetica;
+      font-size: 20px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+      color: #000000;
+      text-align: center;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 284px;
+     top: 620px;
+    }
+
+
+
+    
+

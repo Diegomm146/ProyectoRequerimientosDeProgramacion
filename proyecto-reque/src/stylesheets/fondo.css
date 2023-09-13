@@ -1,0 +1,44 @@
+/*Header*/
+.Header {
+  background-color: #3498DB;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: inline-flex;
+  width: 100%;
+}
+
+h1{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 50px;
+  margin-left: 100px;
+}
+
+.text1 {
+  color: #F1F1F1;
+}
+
+.text2{
+  color: #BDC3C7
+}
+
+.img_tec{
+  width: 650px;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+/*Fondo*/
+.Background{
+  position: relative; /* Establece la posición a relativa para permitir el posicionamiento de la imagen de fondo */
+  width: 100%; /* Ancho del div al 100% del contenedor */
+  height: 100vh; /* Altura del div al 100% del viewport */
+  background-image: url('../imagenes/image-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,62 @@
+.VentanaLogin{
+    background-color: #1ABC9C;
+    padding: 100px 10px 0px 10px;
+    justify-content: center;
+    text-align: center; /* Centra horizontalmente */
+    border-radius: 75px;
+  }
+  
+  .img_ventanaLogin{
+    width: 300;
+    height: 100px;
+    position: relative;
+    bottom: 85px;
+  }
+  
+  .text_login{
+    color: #000000;
+    position: relative;
+    bottom: 110px;
+    right: 42px;
+  }
+  
+  .formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputLogin{
+    margin: 17px 0px;
+    padding: 0px 300px 25px 0px;
+    position: relative;
+    bottom: 130px;
+    font-size: 25px;
+  }
+  
+  .accederBoton{
+    background-color: #DC6712;
+    color: #000000; /* Cambia el color del texto del botón según tus preferencias */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 20px;
+    padding: 20px 40px; /* Ajusta el relleno del botón según tus preferencias */
+    border: none;
+    border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+    position: relative;
+    bottom: 125px;
+  }
+  
+  #regresar1{
+    position: relative;
+    left: 250px;
+    bottom: 35px;
+  }
+
+  .linkRegistrarse{
+    position: relative;
+    right: 350px;
+    bottom: 35px;
+    color: #000000;
+    font-size: 25px;
+  }
+  
