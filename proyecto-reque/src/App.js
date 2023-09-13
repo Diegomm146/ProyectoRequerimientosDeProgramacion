@@ -3,6 +3,8 @@ import Inicio from './components/inicio';
 import Login from './components/login';
 import Registro from './components/registrarse';
 import MenuPrincipal from './components/menuPrincipal';
+import VerEvento from './components/verEvento';
+import CrearEvento from './components/crearEvento';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -19,6 +21,11 @@ function App() {
         <Route path="/menuAsociacion" element={<MenuPrincipal tipoUsuario={"Asociacion"}/>} />
         <Route path="/menuEstudiante" element={<MenuPrincipal tipoUsuario={"Estudiante"}/>} />
         <Route path="/menuColaborador" element={<MenuPrincipal tipoUsuario={"Colaborador"}/>} />
+        <Route path="/verEventoColaborador" element={<VerEvento tipoUsuario={"Colaborador"}/>} />
+        <Route path="/verEvento" element={<VerEvento tipoUsuario={"Estudiante"}/>} />
+        <Route path="/crearEvento" element={<CrearEvento operacion={"Crear"}/>} />
+        <Route path="/modificarEvento" element={<CrearEvento operacion={"Modificar"}/>} />
+
       </Routes>
     </Router>
   );

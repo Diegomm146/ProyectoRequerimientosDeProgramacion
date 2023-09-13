@@ -66,3 +66,18 @@ h1{
   width: 100%;
   height: 100vh;
 }
+
+.BackgroundVerEvento{
+  position: relative; /* Establece la posición a relativa para permitir el posicionamiento de la imagen de fondo */
+  width: 100%; /* Ancho del div al 100% del contenedor */
+  height: 100vh; /* Altura del div al 100% del viewport */
+  background-color: #87CEEB;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}

@@ -1,0 +1,147 @@
+.CE-group-9 {
+    width: 100%;
+    height: 64px;
+      position: absolute;
+      left: 1108px;
+     top: 820px;
+     }
+  
+  
+.CE-rectangle-11 {
+     background: #a3e792;
+      border-radius: 35px;
+      width: 761px;
+      height: 703px;
+      position: absolute;
+      left: 478px;
+     top: 35px;
+     }
+  
+.CE-evento-x {
+     color: #000000;
+      text-align: left;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 80px;
+     top: 60px;
+      width: 250px;
+      height: 45px;
+     }
+  
+.CE-nombre-del-evento {
+     color: #000000;
+      text-align: left;
+      background: #dfdfdf;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 20px;
+     top: 164px;
+      width: 328px;
+      height: 45px;
+     }
+  
+.CE-descripcion {
+     color: #000000;
+      text-align: left;
+      background: #dfdfdf;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 20px;
+     top: 243px;
+      width: 328px;
+      height: 45px;
+     }
+  
+.CE-lugar {
+     color: #000000;
+      text-align: left;
+      background: #dfdfdf;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 20px;
+     top: 321px;
+      width: 328px;
+      height: 45px;
+     }
+  
+.CE-fecha-y-hora {
+     color: #000000;
+      text-align: left;
+      background: #dfdfdf;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 20px;
+     top: 387px;
+      width: 328px;
+      height: 45px;
+     }
+  
+.CE-capacidad {
+     color: #000000;
+      text-align: left;
+      background: #dfdfdf;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 20px;
+     top: 466px;
+      width: 328px;
+      height: 45px;
+     }
+  
+.CE-espacios{
+     color: #000000;
+     background: #dfdfdf;
+      text-align: left;
+      font: 400 32px 'Open Sans', sans-serif;
+      position: absolute;
+      left: 20px;
+     top: 542px;
+      width: 328px;
+      height: 45px;
+     }
+  
+.CE-inscribirse{
+        background-color: #18D9F3;
+        color: #000000; /* Cambia el color del texto del botón según tus preferencias */
+        font-family: "Open Sans-Regular", Helvetica;
+        font-size: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+        color: #000000;
+        text-align: center;
+        font: 400 32px 'Open Sans', sans-serif;
+        position: absolute;
+        left: 284px;
+       top: 620px;
+      }
+
+.CE-rectangle-4, .rectangle-4 * {
+        box-sizing: border-box;
+        }
+
+.CE-rectangle-4 {
+       background: #dfdfdf;
+        width: 318px;
+        height: 360px;
+        position: absolute;
+        left: 404px;
+        top: 158px;
+       }
+
+.CE-fontCB{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.CE-fontAC{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+   
+      
+  
+  
