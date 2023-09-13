@@ -30,7 +30,7 @@ const VerEvento = ({ tipoUsuario }) => {
                 Capacidad 
             </div>
           </div>;
-          componenteregresar = <Link to="/">
+          componenteregresar = <Link to="/verListaEventosColaborador">
           <button class="regresar" id="regresar1">Regresar</button>
         </Link>
     } else if(tipoUsuario === 'Estudiante') {

@@ -25,7 +25,7 @@ const ProfilePage = ({tipoUsuario}) => {
             </Link>
         );
         componenteGuardar = (
-            <Link to='/menuEstudiante'>
+            <Link to='/menuColaborador'>
                 <button className="button">Guardar Cambios</button>
             </Link>
         );

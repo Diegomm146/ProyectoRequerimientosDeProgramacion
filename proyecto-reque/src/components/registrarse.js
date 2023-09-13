@@ -63,14 +63,14 @@ const Registro = ({ tipoUsuario, tipoNumero }) => {
                         />
                         <input
                         className="inputRegistro"
-                        type="text"
+                        type="email"
                         value={correo}
                         onChange={handleCorreoChange}
                         placeholder="Correo Electrónico"
                         />
                         <input
                         className="inputRegistro"
-                        type="text"
+                        type="password"
                         value={contrasena}
                         onChange={handleContrasenaChange}
                         placeholder="Contraseña"

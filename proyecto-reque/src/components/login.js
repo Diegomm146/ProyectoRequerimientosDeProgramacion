@@ -44,14 +44,14 @@ const Registro = ({ tipoUsuario }) => {
                     <form className="formLogin" onSubmit={handleSubmit}>
                         <input
                         className="inputLogin"
-                        type="text"
+                        type="email"
                         value={correo}
                         onChange={handleCorreoChange}
                         placeholder="Correo Electrónico"
                         />
                         <input
                         className="inputLogin"
-                        type="text"
+                        type="password"
                         value={contrasena}
                         onChange={handleContrasenaChange}
                         placeholder="Contraseña"

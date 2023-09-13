@@ -9,14 +9,14 @@ const MenuPrincipal = ({tipoUsuario}) => {
 
     if (tipoUsuario == 'Asociacion') {
         componenteRenderizado = <div className="DivBotonesAsociacion">
-                                    <Link to="/">
+                                    <Link to="/administrarEventos">
                                         <button className="BotonesAsociacion" id="BotonesAsociacion1">Administrar Eventos</button>
                                     </Link> 
                                     
                                     <Link to="/crearEvento">
                                         <button className="BotonesAsociacion" id="BotonesAsociacion2">Crear Evento</button>
                                     </Link> 
-                                    <Link to="/">
+                                    <Link to="/verEventosCreados">
                                         <button className="BotonesAsociacion" id="BotonesAsociacion3">Ver Eventos Creados</button>
                                     </Link>
                                 </div>;
@@ -37,7 +37,7 @@ const MenuPrincipal = ({tipoUsuario}) => {
                                         <button className="BotonesColaborador" id="BotonesColaborador1">Administrar Perfil</button>
                                     </Link> 
                                     
-                                    <Link to="/">
+                                    <Link to="/verListaEventosColaborador">
                                         <button className="BotonesColaborador" id="BotonesColaborador2">Ver Eventos Que Colabora</button>
                                     </Link> 
                                 </div>;

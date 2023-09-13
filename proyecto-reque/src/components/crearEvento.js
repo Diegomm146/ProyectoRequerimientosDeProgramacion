@@ -61,6 +61,7 @@ const CrearEvento = ({ operacion }) => {
 
     var titulo;
     let componenteRenderizado;
+    let componenteregresar;
 
     if (operacion == 'Crear') {
         componenteRenderizado = <Link to="/menuAsociacion">
@@ -69,6 +70,9 @@ const CrearEvento = ({ operacion }) => {
             </button>
         </Link>;
         titulo = "Crear Evento";
+        componenteregresar = <Link to="/menuAsociacion">
+                                <button class="regresar" id="regresar1">Regresar</button>
+                            </Link>
     } else if(operacion === 'Modificar') {
         componenteRenderizado = <Link to="/menuAsociacion">
             <button class="CE-inscribirse" id="inscribirse" onClick={modificar}>
@@ -76,6 +80,9 @@ const CrearEvento = ({ operacion }) => {
             </button>
         </Link>;
         titulo = "Modificar Evento";
+        componenteregresar = <Link to="/administrarEventos">
+                                <button class="regresar" id="regresar1">Regresar</button>
+                            </Link>
     }
     // En el js se va a tener que insertar los colaboradores en el ul hay uno pero es de ejemplo
     return (
@@ -139,9 +146,7 @@ const CrearEvento = ({ operacion }) => {
                 </div>
             </div>
                 <div class="CE-group-9" >
-                    <Link to="/menuAsociacion">
-                        <button class="regresar" id="regresar1">Regresar</button>
-                    </Link>
+                    {componenteregresar}
                 </div>
             </div>
         </div>
