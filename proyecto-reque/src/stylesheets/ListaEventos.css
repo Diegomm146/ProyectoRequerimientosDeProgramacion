@@ -1,0 +1,74 @@
+.profile-container {
+    background-color: #A3E792;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+.profile-container input {
+    width: 80%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container div {
+    margin-bottom: 10px;
+    
+}
+
+.button {
+    margin-top: 200px;
+    background-color: #18D9F3;
+}
+
+.event-wrapper {
+    display: flex;               /* Usa flexbox para alinear el contenedor y el botón */
+    justify-content: space-between; /* Distribuye espacio entre el contenedor y el botón */
+    align-items: center;         /* Centra verticalmente el contenedor y el botón */
+    margin-bottom: 10px;         /* Espacio entre cada conjunto de contenedor+botón */
+}
+
+.event-container {
+    background-color: #8FCEC3;
+    padding: 10px;               
+    flex-grow: 1;                /* Permite que el contenedor crezca y tome el espacio disponible */
+    margin-right: 10px;          /* Espacio entre el contenedor y el botón */
+    border-radius: 20px;
+    position: relative;
+    right: 100px;
+}
+
+.event-container button {
+    background-color: #007BFF;  /* Color de fondo azul */
+    color: #ffffff;             /* Texto blanco */
+    padding: 10px;         /* Espacio alrededor del texto */
+    margin-bottom: 10px;         /* Espacio entre cada contenedor de evento */
+    display: flex;               /* Usa flexbox para alinear el título y el botón */
+    justify-content: space-between; /* Distribuye espacio entre el título y el botón */
+    align-items: center;         /* Centra verticalmente el título y el botón */
+    border-radius: 10px;     /* Bordes redondeados */
+}
+
+.event-container h3 {
+    text-align: left; /* Alinear el texto al inicio del contenedor */
+    margin: 0; /* Quitar el margen por defecto para que comience exactamente al inicio */
+}
+
+.event-wrapper button {
+    background-color: #18D9F3;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+}
+
+#regresarListaEventos{
+    position: relative;
+    left: 1550px;
+    top: 200px;
+}

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../stylesheets/general.css";
 import "../stylesheets/crearEvento.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const CrearEvento = ({ operacion }) => {
@@ -10,9 +10,10 @@ const CrearEvento = ({ operacion }) => {
     const [lugar, setLugar] = useState('');
     const [fechaHora, setfechaHora] = useState('');
     const [capacidad, setCapacidad] = useState('');
+    const navigate = useNavigate();
 
     const handleNombreChange = (e) => {
-        operacion(e.target.value);
+        setNombre(e.target.value);
     };
 
     const handleDescChange = (e) => {
@@ -41,6 +42,8 @@ const CrearEvento = ({ operacion }) => {
         console.log('Fecha y Hora:', fechaHora);
         console.log('Capacidad:', capacidad);
 
+        navigate('/menuAsociacion');
+
     };
 
     const modificar = (e) => {
@@ -51,6 +54,8 @@ const CrearEvento = ({ operacion }) => {
         console.log('Lugar:', lugar);
         console.log('Fecha y Hora:', fechaHora);
         console.log('Capacidad:', capacidad);
+        
+        navigate('/menuAsociacion');
 
     };
 
@@ -58,14 +63,14 @@ const CrearEvento = ({ operacion }) => {
     let componenteRenderizado;
 
     if (operacion == 'Crear') {
-        componenteRenderizado = <Link to="/">
+        componenteRenderizado = <Link to="/menuAsociacion">
             <button class="CE-inscribirse" id="inscribirse" onClick={crear}>
                 Crear Evento
             </button>
         </Link>;
         titulo = "Crear Evento";
     } else if(operacion === 'Modificar') {
-        componenteRenderizado = <Link to="/">
+        componenteRenderizado = <Link to="/menuAsociacion">
             <button class="CE-inscribirse" id="inscribirse" onClick={modificar}>
                 Modificar Evento
             </button>
@@ -134,7 +139,7 @@ const CrearEvento = ({ operacion }) => {
                 </div>
             </div>
                 <div class="CE-group-9" >
-                    <Link to="/">
+                    <Link to="/menuAsociacion">
                         <button class="regresar" id="regresar1">Regresar</button>
                     </Link>
                 </div>

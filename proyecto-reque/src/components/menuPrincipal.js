@@ -13,7 +13,7 @@ const MenuPrincipal = ({tipoUsuario}) => {
                                         <button className="BotonesAsociacion" id="BotonesAsociacion1">Administrar Eventos</button>
                                     </Link> 
                                     
-                                    <Link to="/">
+                                    <Link to="/crearEvento">
                                         <button className="BotonesAsociacion" id="BotonesAsociacion2">Crear Evento</button>
                                     </Link> 
                                     <Link to="/">
@@ -22,18 +22,18 @@ const MenuPrincipal = ({tipoUsuario}) => {
                                 </div>;
       } else if (tipoUsuario === 'Estudiante') {
         componenteRenderizado = <div className="DivBotonesEstudiante">
-                                    <Link to="/">
+                                    <Link to="/administrarPerfilEstudiante">
                                         <button className="BotonesEstudiante" id="BotonesEstudiante1">Administrar Perfil</button>
                                     </Link> 
                                     
-                                    <Link to="/">
+                                    <Link to="/verListaEventosEstudiante">
                                         <button className="BotonesEstudiante" id="BotonesEstudiante2">Ver Eventos</button>
                                     </Link> 
                                 </div>;
       } else {
         // En caso de otro tipo de usuario o valor no reconocido, puedes manejarlo aquí.
         componenteRenderizado = <div className="DivBotonesColaborador">
-                                    <Link to="/">
+                                    <Link to="/administrarPerfilColaborador">
                                         <button className="BotonesColaborador" id="BotonesColaborador1">Administrar Perfil</button>
                                     </Link> 
                                     

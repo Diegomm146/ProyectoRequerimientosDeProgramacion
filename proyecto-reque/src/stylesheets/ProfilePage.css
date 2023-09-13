@@ -1,0 +1,46 @@
+
+.profile-container {
+    position: relative;
+    left: 465px;
+    top: 150px;
+    background-color: #A3E792;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container input {
+    width: 80%;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container div {
+    margin-bottom: 10px;
+    margin-left: 100px;
+    
+}
+
+.button {
+    background-color: #18D9F3;
+    color: #000000; /* Cambia el color del texto del botón según tus preferencias */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 20px;
+    padding: 20px 40px; /* Ajusta el relleno del botón según tus preferencias */
+    border: none;
+    border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+    position: relative;
+    left: 200px;
+}
+
+#regresarActualizar{
+    position: relative;
+    left: 1550px;
+    top:150px;
+}

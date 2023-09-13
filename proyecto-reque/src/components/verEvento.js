@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const VerEvento = ({ tipoUsuario }) => {
 
     let componenteRenderizado;
+    let componenteregresar;
 
     if (tipoUsuario == 'Colaborador') {
         componenteRenderizado =  <div class="VE-rectangle-11" >
@@ -28,7 +29,10 @@ const VerEvento = ({ tipoUsuario }) => {
             <div class="VE-capacidad" id="capacidad">
                 Capacidad 
             </div>
-          </div>
+          </div>;
+          componenteregresar = <Link to="/">
+          <button class="regresar" id="regresar1">Regresar</button>
+        </Link>
     } else if(tipoUsuario === 'Estudiante') {
         componenteRenderizado =  <div class="VE-rectangle-11" >
             <div class="VE-evento-x" id="evento">
@@ -52,12 +56,15 @@ const VerEvento = ({ tipoUsuario }) => {
             <div class="VE-espacios" id="espacios">
                 Espacios Disponibles 
             </div>
-            <Link to="/">
+            <Link to="/menuEstudiante">
                     <button class="VE-inscribirse" id="inscribirse">
                         Inscribirse
                     </button>
             </Link>
-          </div>
+          </div>;
+          componenteregresar = <Link to="/verListaEventosEstudiante">
+          <button class="regresar" id="regresar1">Regresar</button>
+        </Link>
     }
 
     return (
@@ -72,9 +79,7 @@ const VerEvento = ({ tipoUsuario }) => {
             <div className="BackgroundVerEvento">
                 {componenteRenderizado}
                 <div class="VE-group-9" >
-                    <Link to="/">
-                        <button class="regresar" id="regresar1">Regresar</button>
-                    </Link>
+                    {componenteregresar}
                 </div>
             </div>
 
