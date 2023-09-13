@@ -1,0 +1,107 @@
+header {
+    font-size: 24px;
+    margin: 0;             /* Quitar margen */
+    padding: 15px 20px;    /* Añadir padding para espacio alrededor del texto */
+    text-align: left;      /* Alinear texto a la izquierda */
+    background-color: #3498DB; 
+    color: #fff;
+    width: 100%;           /* Ocupa todo el ancho de la pantalla */
+    position: fixed; 
+    top: 0; 
+    left: 0;               /* Asegura que el header comience desde la esquina superior izquierda */
+    z-index: 1000; 
+}
+
+.container {
+    font-family: Arial, sans-serif;
+}
+
+.profile-container {
+    background-color: #A3E792;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 1000px;
+    position: absolute;
+    left: 398px;
+   top: 35px;
+}
+
+.profile-container input {
+    width: 80%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container div {
+    margin-bottom: 10px;
+    
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #18D9F3;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #FC1717;
+}
+
+.event-wrapper {
+    display: flex;               /* Usa flexbox para alinear el contenedor y el botón */
+    justify-content: space-between; /* Distribuye espacio entre el contenedor y el botón */
+    align-items: center;         /* Centra verticalmente el contenedor y el botón */
+    margin-bottom: 10px;         /* Espacio entre cada conjunto de contenedor+botón */
+}
+
+.event-container {
+    background-color: #8FCEC3;
+    padding: 5px;               
+    flex-grow: 1;                /* Permite que el contenedor crezca y tome el espacio disponible */
+    margin-right: 10px;          /* Espacio entre el contenedor y el botón */
+    border-radius: 20px;
+}
+
+.event-container button {
+    background-color: #007BFF;  /* Color de fondo azul */
+    color: #ffffff;             /* Texto blanco */
+    padding: 10px;         /* Espacio alrededor del texto */
+    margin-bottom: 10px;         /* Espacio entre cada contenedor de evento */
+    display: flex;               /* Usa flexbox para alinear el título y el botón */
+    justify-content: space-between; /* Distribuye espacio entre el título y el botón */
+    align-items: center;         /* Centra verticalmente el título y el botón */
+    border-radius: 10px;     /* Bordes redondeados */
+}
+
+.event-container h3 {
+    text-align: left; /* Alinear el texto al inicio del contenedor */
+    margin: 0; /* Quitar el margen por defecto para que comience exactamente al inicio */
+}
+
+.event-wrapper button {
+    background-color: #18D9F3;
+    color: #000000; /* Cambia el color del texto del botón según tus preferencias */
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 100px; /* Añade esquinas redondeadas al botón según tus preferencias */
+    color: #000000;
+    text-align: center;
+    font: 400 32px 'Open Sans', sans-serif;
+}
+.LE-group-9 {
+    width: 100%;
+    height: 64px;
+      position: absolute;
+      left: 1108px;
+     top: 820px;
+}

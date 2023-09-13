@@ -5,6 +5,8 @@ import Registro from './components/registrarse';
 import MenuPrincipal from './components/menuPrincipal';
 import VerEvento from './components/verEvento';
 import CrearEvento from './components/crearEvento';
+import ListaEventos from './components/listaEventos';
+import AdministrarPerfil from './components/administrarPerfil';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -25,6 +27,11 @@ function App() {
         <Route path="/verEvento" element={<VerEvento tipoUsuario={"Estudiante"}/>} />
         <Route path="/crearEvento" element={<CrearEvento operacion={"Crear"}/>} />
         <Route path="/modificarEvento" element={<CrearEvento operacion={"Modificar"}/>} />
+        <Route path="/listaEventos" element={<ListaEventos operacion={"Ver"}/>} />
+        <Route path="/administrarListaEventos" element={<ListaEventos operacion={"Administrar"}/>} />
+        <Route path="/listaEventosColaborador" element={<ListaEventos operacion={"VerColaborador"}/>} />
+        <Route path="/administrarPerfil" element={<AdministrarPerfil tipoUsuario={"Estudiante"}/>} />
+        <Route path="/listaEventosColaborador" element={<AdministrarPerfil tipoUsuario={"Colaborador"}/>} />
 
       </Routes>
     </Router>

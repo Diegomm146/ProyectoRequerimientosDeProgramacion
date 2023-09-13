@@ -12,7 +12,7 @@ const CrearEvento = ({ operacion }) => {
     const [capacidad, setCapacidad] = useState('');
 
     const handleNombreChange = (e) => {
-        operacion(e.target.value);
+        setNombre(e.target.value);
     };
 
     const handleDescChange = (e) => {
