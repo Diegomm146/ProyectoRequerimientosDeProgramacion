@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "../stylesheets/general.css";
 import "../stylesheets/verEvento.css";
-
 import { Link } from "react-router-dom";
 
 
