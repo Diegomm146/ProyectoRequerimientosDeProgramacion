@@ -1,13 +1,16 @@
 import React, {useState} from "react";
 import "../stylesheets/general.css";
 import "../stylesheets/login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import {auth} from "../firebase"
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 
 const Registro = ({ tipoUsuario }) => {
 
     const [correo, setCorreo] = useState('');
     const [contrasena, setContrasena] = useState('');
+    const navigate = useNavigate();
 
     const handleCorreoChange = (e) => {
         setCorreo(e.target.value);
@@ -20,9 +23,13 @@ const Registro = ({ tipoUsuario }) => {
     // Función para manejar el envío del formulario
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes hacer algo con los valores de nombre, correo, contrasena y numero
-        console.log('Correo Electrónico:', correo);
-        console.log('Contraseña:', contrasena);
+        signInWithEmailAndPassword(auth,correo,contrasena)
+        .then((userCredentials) => {
+            console.log(userCredentials)
+            navigate(`/menu${tipoUsuario}`);
+        }).catch((error)=>{
+            console.log(error)
+        })
       };
 
     return (
@@ -56,9 +63,7 @@ const Registro = ({ tipoUsuario }) => {
                         onChange={handleContrasenaChange}
                         placeholder="Contraseña"
                         />
-                        <Link to={`/menu${tipoUsuario}`}>
-                           <button className="accederBoton" type="submit">Acceder</button> 
-                        </Link>
+                        <button className="accederBoton" type="submit">Acceder</button> 
                         
                     </form>
 

@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import "../stylesheets/general.css";
 import "../stylesheets/registro.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import {auth} from "../firebase"
 
 
 const Registro = ({ tipoUsuario, tipoNumero }) => {
@@ -10,6 +12,7 @@ const Registro = ({ tipoUsuario, tipoNumero }) => {
     const [correo, setCorreo] = useState('');
     const [contrasena, setContrasena] = useState('');
     const [numero, setNumero] = useState('');
+    const navigate = useNavigate();
 
      const handleNombreChange = (e) => {
         setNombre(e.target.value);
@@ -29,12 +32,16 @@ const Registro = ({ tipoUsuario, tipoNumero }) => {
 
     // Función para manejar el envío del formulario
     const handleSubmit = (e) => {
+
         e.preventDefault();
-        // Aquí puedes hacer algo con los valores de nombre, correo, contrasena y numero
-        console.log('Nombre:', nombre);
-        console.log('Correo Electrónico:', correo);
-        console.log('Contraseña:', contrasena);
-        console.log('Número:', numero);
+        createUserWithEmailAndPassword(auth,correo,contrasena)
+        .then((userCredentials) => {
+            console.log(userCredentials)
+            navigate(`/menu${tipoUsuario}`);
+        }).catch((error)=>{
+            console.log(error)
+        })
+        // Aquí puedes hacer algo con los valores de nombre, correo, contrasena y numero 
       };
 
     return (
@@ -82,9 +89,7 @@ const Registro = ({ tipoUsuario, tipoNumero }) => {
                         onChange={handleNumeroChange}
                         placeholder={`Numero ${tipoNumero}`}
                         />
-                        <Link to={`/menu${tipoUsuario}`}>
-                           <button className="accederBoton" type="submit">Acceder</button> 
-                        </Link>
+                        <button className="accederBoton" type="submit">Acceder</button> 
                         
                     </form>
 
